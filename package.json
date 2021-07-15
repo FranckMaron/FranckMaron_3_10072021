@@ -1,0 +1,21 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": ".",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/mains.scss:.public/style.css",
+    "prefix":"postcss ./public/style.css --use autoprefixer -d ./public/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranckMaron/FranckMaron_3_10072021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browerslist":"last 4 versions",
+  "bugs": {
+    "url": "https://github.com/FranckMaron/FranckMaron_3_10072021/issues"
+  },
+  "homepage": "https://github.com/FranckMaron/FranckMaron_3_10072021#readme"
+}
