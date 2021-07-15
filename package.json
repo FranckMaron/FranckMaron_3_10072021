@@ -4,8 +4,8 @@
   "description": ".",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./scss/mains.scss:.public/style.css",
-    "prefix":"postcss ./public/style.css --use autoprefixer -d ./public/prefixed/"
+    "sass": "sass --watch ./scss/main.scss:./public/style.css",
+    "prefix": "postcss ./public/style.css --use autoprefixer -d ./public/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
   },
   "author": "",
   "license": "ISC",
-  "browerslist":"last 4 versions",
+  "browerslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/FranckMaron/FranckMaron_3_10072021/issues"
   },
