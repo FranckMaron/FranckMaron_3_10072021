@@ -1,11 +1,11 @@
-@import "./utils/variables";
-@import "./utils/mixins";
-@import "./base/base";
-@import "./base/typo";
-@import "./composants/button";
-@import "./layout/header";
-@import "./layout/footer";
-@import "./pages/acceuil";
+@import "utils/variables";
+@import "utils/mixins";
+@import "base/base";
+@import "base/typo";
+@import "composants/button";
+@import "layout/header";
+@import "layout/footer";
+@import "pages/acceuil";
 img{
     width: 100%;
 }

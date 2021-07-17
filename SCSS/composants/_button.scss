@@ -3,11 +3,14 @@
 }
 .btn-heart{
     border: none;
+    background: none;
     font-size: 1.5em;
-    color:rgba(0, 0, 0, 0.521);
-    background-color: red;
     float: right;
     position: relative;
-    bottom: 30px;
+    bottom: 55px;
     right: 20px;
+    cursor: pointer;
+    &:focus{
+        background: linear-gradient($color-secondary, $color-primary);
+    }
 }

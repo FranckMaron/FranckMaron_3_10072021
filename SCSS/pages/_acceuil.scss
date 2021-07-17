@@ -1,34 +1,37 @@
 .position{
-    width: auto;
+    width: 100%;
     font-size: 1.1em;
     font-weight: 100;
     background-color: rgba(128, 128, 128, 0.123);
-    padding: 4%;
-    text-align: center;   
+    padding: 17px; 
 
     i{
-        padding-right: 5%;
+        margin-left: 85px;
+        padding-right: 15px;
     }
 }
 
-.description{
+.description{  
     text-align: center;
-    padding-top: 40px;
         &__titre{
+            font-size: map-get($text-size, size1);
             width: 90%;
-            margin: auto;
-            margin-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            margin-left: 12px;
         }
         &__texte{
+            font-size: 1.14em;
             color: rgba(0, 0, 0, 0.582);
         }
         &__btn{
-            margin-top: 25px;
+            margin-top: 30px;
         }
 }
 .fonctionnement{
-    margin-top: 90px;
-    margin-bottom: 30px;
+    font-size: 1.4em;
+    margin-top: 105px;
+    margin-bottom: 42px;
     &__etape{
         @include fonctionnement-etapes;
     }
@@ -48,12 +51,38 @@
     height: 20px;
     width: 20px;
     position: relative;
-    left: -25px;
+    left: -23px;
     display: inline-block;
     border-radius: 10px;
 }
+#resto{
+    margin-top: 132px;
+}
 .card-resto{
     display: inline-block;
+    @include box-shadow;
     @include border;
+    width: 320px;
     color: black;
+    margin-top: 23px;
+    img {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-size: cover;
+        width: 320px;
+        height: 170px;
+        }
+    div{
+        padding: 15px;
+    }
+}
+.new{
+    background-color: $color-tertiary;
+    color: #008766;
+    float: right;
+    position: relative;
+    bottom: 170px;
+    right: 10px;
+    padding: 5px;
+    width: 70px;
 }

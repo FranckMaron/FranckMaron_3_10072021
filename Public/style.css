@@ -8,7 +8,11 @@ a {
 }
 
 main {
-  margin: 30px;
+  margin: 20px;
+}
+
+ul {
+  list-style: none;
 }
 
 @font-face {
@@ -27,21 +31,24 @@ h1, h2, h3 {
   font-family: "shrikhand", "roboto", sans-serif;
 }
 
-h1 {
-  font-size: 1.5em;
+h2 {
+  font-size: 1.4em;
 }
 
-h2 {
-  font-size: 1.3em;
+h4 {
+  font-size: 1.1em;
+  font-weight: initial;
 }
 
 .btn {
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   border-radius: 25px;
-  height: 45px;
-  width: 200px;
+  height: 50px;
+  width: 220px;
+  margin-left: 20px;
   color: white;
+  font-size: 0.9em;
   font-weight: 900;
   box-shadow: 0px 5px 5px rgba(170, 167, 167, 0.356);
   cursor: pointer;
@@ -49,76 +56,96 @@ h2 {
 
 .btn-heart {
   border: none;
+  background: none;
   font-size: 1.5em;
-  color: rgba(0, 0, 0, 0.521);
-  background-color: red;
   float: right;
   position: relative;
-  bottom: 30px;
+  bottom: 55px;
   right: 20px;
+  cursor: pointer;
+}
+.btn-heart:focus {
+  background: linear-gradient(#FF79DA, #9356DC);
 }
 
 .header {
   width: 100%;
   height: 100%;
   text-align: center;
-  padding-top: 5%;
-  padding-bottom: 2%;
-}
-.header__shadow {
-  box-shadow: 0.5px 2px 1px rgba(128, 128, 128, 0.384);
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 5px;
 }
 .header img {
   width: 50%;
 }
+.header__shadow {
+  box-shadow: 0.5px 2px 1px rgba(128, 128, 128, 0.384);
+}
 
 footer {
-  background-color: #424141;
+  padding: 30px;
+  background-color: #353535;
   color: white;
+  margin-top: 85px;
+  height: 150px;
 }
 footer a {
   color: white;
 }
+footer h2 {
+  margin-bottom: 20px;
+}
+footer li {
+  padding: 5px;
+}
+footer li .icon-footer {
+  width: 20px;
+}
 
 .position {
-  width: auto;
+  width: 100%;
   font-size: 1.1em;
   font-weight: 100;
   background-color: rgba(128, 128, 128, 0.123);
-  padding: 4%;
-  text-align: center;
+  padding: 17px;
 }
 .position i {
-  padding-right: 5%;
+  margin-left: 85px;
+  padding-right: 15px;
 }
 
 .description {
   text-align: center;
-  padding-top: 40px;
 }
 .description__titre {
+  font-size: 1.4em;
   width: 90%;
-  margin: auto;
-  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  margin-left: 12px;
 }
 .description__texte {
+  font-size: 1.14em;
   color: rgba(0, 0, 0, 0.582);
 }
 .description__btn {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .fonctionnement {
-  margin-top: 90px;
-  margin-bottom: 30px;
+  font-size: 1.4em;
+  margin-top: 105px;
+  margin-bottom: 42px;
 }
 .fonctionnement__etape {
   border-radius: 15px;
   height: 20px;
-  width: 90%;
+  width: 270px;
+  margin: auto;
   padding: 15px;
-  margin-bottom: 20px;
-  font-size: 0.9em;
+  margin-bottom: 47px;
+  font-size: 0.95em;
   font-weight: bolder;
   box-shadow: 0px 5px 5px rgba(170, 167, 167, 0.356);
 }
@@ -138,16 +165,44 @@ footer a {
   height: 20px;
   width: 20px;
   position: relative;
-  left: -25px;
+  left: -23px;
   display: inline-block;
   border-radius: 10px;
 }
 
+#resto {
+  margin-top: 132px;
+}
+
 .card-resto {
   display: inline-block;
-  border: 0.3px solid rgba(128, 128, 128, 0.096);
+  box-shadow: 0px 5px 5px rgba(170, 167, 167, 0.356);
+  border: 0.3px solid rgba(128, 128, 128, 0.336);
   border-radius: 15px;
+  width: 320px;
   color: black;
+  margin-top: 23px;
+}
+.card-resto img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  width: 320px;
+  height: 170px;
+}
+.card-resto div {
+  padding: 15px;
+}
+
+.new {
+  background-color: #99E2D0;
+  color: #008766;
+  float: right;
+  position: relative;
+  bottom: 170px;
+  right: 10px;
+  padding: 5px;
+  width: 70px;
 }
 
 img {

@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/style.css">
+    <link rel="stylesheet" href="public/style.css">
     <script src="https://kit.fontawesome.com/c7c9029f97.js" crossorigin="anonymous"></script>
     <title>OhMyFood - Acceuil</title>
 </head>
 <body>
     <header class="header header__shadow">
         <p >
-            <img src="./images/ohmyfood.svg" alt="Logo texte OhMyFood">
+            <img src="images/ohmyfood.svg" alt="Logo texte OhMyFood">
         </p>
     </header>
     <div class="position">        
-        <p><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>        
+        <p><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>        
     </div>
     <main>
         <section class="description">
-            <h1 class="description__titre">Réservez le menu qui vous convient</h1>
+            <h1 class="description__titre">Réservez le menu  qui <br>vous convient</h1>
             <p class="description__texte">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
             <button class="description__btn btn">Explorer nos restaurants</button>
         </section>
@@ -28,39 +28,39 @@
                 <div class="fonctionnement__etape"> <span class="pastilles">2</span> <i class="fas fa-bars fonctionnement__icon"></i> Composez votre menu</div>
                 <div class="fonctionnement__etape"> <span class="pastilles">3</span> <i class="fas fa-store fonctionnement__icon fonctionnement__icon--pink"></i> Dégustez au restaurant</div>
         </section>
-        <section>
-            <h2 id="resto">Restaurants</h2>        
-            <a class="card-resto" href="./palettedu_gout.html">                    
-                <span>Nouveau</span>
-                <img src="./images/palette-du-gout.jpg" alt="Entrée servi à table">
+        <section id="resto">
+            <h2>Restaurants</h2>        
+            <a class="card-resto" href="palettedu_gout.html">
+                <img src="images/palette-du-gout.jpg" alt="Entrée servi à table">
                 <div>
+                    <span class="new">Nouveau</span>
                     <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p>
-                </div>
-            </a>
-           <span><i class="far fa-heart btn-heart"></i></span>
-            <a class="card-resto" href="./la_note_enchantée.html">
-                <span>Nouveau</span>
-                <img src="./images/note-enchantée.jpg" alt="Plat chaud accompagné de son verre de vin">
-                <div>
-                    <h3>La note enchantée</h3>
-                    <p>Charonne</p>                    
-                </div>                
-            </a>
-            <button class="btn-heart"><i class="far fa-heart"></i></button>
-            <a class="card-resto" href="./la_francaise.html">
-                <img src="./images/la-francaise.jpg" alt="Entée à la mayonnaise">
-                <div>
-                    <h3>A la française</h3>
-                    <p>Cité Rouge</p>                    
+                    <h4>Ménilmontant</h4>
                 </div>
             </a>
            <button class="btn-heart"><i class="far fa-heart"></i></button>
-            <a class="card-resto" href="./delices_des_sens.html">
-                <img src="./images/delices-des-sens.jpg" alt="Poisson sur un lit de sel">
+            <a class="card-resto" href="la_note_enchantée.html">                
+                <img src="images/note-enchantée.jpg" alt="Plat chaud accompagné de son verre de vin">
+                <div>
+                    <span class="new">Nouveau</span>
+                    <h3>La note enchantée</h3>
+                    <h4>Charonne</h4>                    
+                </div>                
+            </a>
+            <button class="btn-heart"><i class="far fa-heart"></i></button>
+            <a class="card-resto" href="la_francaise.html">
+                <img src="images/la-francaise.jpg" alt="Entée à la mayonnaise">
+                <div>
+                    <h3>A la française</h3>
+                    <h4>Cité Rouge</h4>                    
+                </div>
+            </a>
+           <button class="btn-heart"><i class="far fa-heart"></i></button>
+            <a class="card-resto" href="delices_des_sens.html">
+                <img src="images/delices-des-sens.jpg" alt="Poisson sur un lit de sel">
                 <div>
                     <h3>Le délice des sens</h3>
-                    <p>Folie-Méricourt</p>
+                    <h4>Folie-Méricourt</h4>
                 </div>
             </a>
             <button class="btn-heart"><i class="far fa-heart"></i></button>
@@ -69,10 +69,10 @@
     <footer>
         <h2>ohmyfood</h2>
         <ul>
-            <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-            <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li><a href="mailto:ohmyfood@gmail.com">Contact</a></li>
+            <li><i class="fas fa-utensils icon-footer" ></i> Proposer un restaurant</li>
+            <li><i class="fas fa-hands-helping icon-footer"></i> Devenir partenaire</li>
+            <li> Mentions légales</li>
+            <li><a href="mailto:ohmyfood@gmail.com"> Contact</a></li>
         </ul>
     </footer>
 </body>
