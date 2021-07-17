@@ -2,8 +2,10 @@
 @import "./utils/mixins";
 @import "./base/base";
 @import "./base/typo";
+@import "./composants/button";
 @import "./layout/header";
+@import "./layout/footer";
 @import "./pages/acceuil";
 img{
-    display: none;
+    width: 100%;
 }

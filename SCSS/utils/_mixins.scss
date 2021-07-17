@@ -14,17 +14,29 @@
     color: white;
     font-weight: 900;
     @include box-shadow;
+    cursor: pointer;
 }
 @mixin fonctionnement-etapes{
-    border: .3px solid rgba(128, 128, 128, 0.096);
     border-radius: 15px;
     height: 20px;
-    width: 80%;
-    margin: auto;
+    width: 90%;
     padding: 15px;
     margin-bottom: 20px;
+    font-size: 0.9em;
+    font-weight: bolder;
     @include box-shadow;
 }
 @mixin box-shadow {
     box-shadow: 0px 5px 5px rgba(170, 167, 167, 0.356);
+}
+@mixin border {
+    border: .3px solid rgba(128, 128, 128, 0.096);
+    border-radius: 15px;
+}
+@mixin footer {
+    background-color: rgb(66, 65, 65);
+    color: white;
+    a{
+        color: white;
+    }
 }
