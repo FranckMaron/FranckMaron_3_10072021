@@ -1,36 +1,41 @@
 .position{
-    width: 100%;
+    text-align: center;
     font-size: 1.1em;
     font-weight: 100;
-    background-color: rgba(128, 128, 128, 0.123);
-    padding: 17px; 
+    background-color: rgba(128, 128, 128, 0.219);
+    padding-bottom: 20px;
+    padding-top: 30px;
 
     i{
-        margin-left: 85px;
         padding-right: 15px;
     }
 }
 
 .description{  
     text-align: center;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.103);
         &__titre{
             font-size: map-get($text-size, size1);
             width: 90%;
-            margin-top: 40px;
+            padding-top: 40px;
             margin-bottom: 15px;
-            margin-left: 12px;
+            margin-left: 17px;
         }
         &__texte{
-            font-size: 1.14em;
+            margin-left: 18px;
+            font-size: 1.1em;
             color: rgba(0, 0, 0, 0.582);
         }
         &__btn{
-            margin-top: 30px;
+            margin: 30px;
+            margin-left: 50px;
         }
 }
 .fonctionnement{
     font-size: 1.4em;
-    margin-top: 105px;
+    margin-top: 75px;
+    margin-left: 20px;
     margin-bottom: 42px;
     &__etape{
         @include fonctionnement-etapes;
@@ -51,19 +56,22 @@
     height: 20px;
     width: 20px;
     position: relative;
-    left: -23px;
+    right: 7px;
     display: inline-block;
     border-radius: 10px;
 }
 #resto{
-    margin-top: 132px;
+    margin-top: 65px;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background-color: rgba(128, 128, 128, 0.103);
 }
 .card-resto{
     display: inline-block;
     @include box-shadow;
     @include border;
-    width: 320px;
-    color: black;
+    width: 320px;    
     margin-top: 23px;
     img {
         border-top-left-radius: 15px;
@@ -73,7 +81,9 @@
         height: 170px;
         }
     div{
-        padding: 15px;
+        padding-left: 15px;
+        padding-top: 15px;
+        color: black;
     }
 }
 .new{

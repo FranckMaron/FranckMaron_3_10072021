@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,39 +7,37 @@
 
 a {
   text-decoration: none;
-}
-
-main {
-  margin: 20px;
+  color: black;
 }
 
 ul {
   list-style: none;
 }
 
-@font-face {
-  font-family: "roboto";
-  src: url(../../Public/polices/Roboto-Regular.svg) format("svg"), url(../../Public/polices/Roboto-Regular.ttf) format("ttf");
+main {
+  padding-top: 70px;
 }
-@font-face {
-  font-family: "shrikhand";
-  src: url(../../Public/polices/Shrikhand-Regular.svg) format("svg"), url(../../Public/polices/Shrikhand-Regular.ttf) format("ttf");
-}
+
 body {
   font-family: "roboto", "shrikhand", sans-serif;
 }
 
-h1, h2, h3 {
+h1 {
   font-family: "shrikhand", "roboto", sans-serif;
 }
 
 h2 {
   font-size: 1.4em;
+  font-weight: 900;
 }
 
 h4 {
   font-size: 1.1em;
-  font-weight: initial;
+  font-weight: 100;
+}
+
+footer h2 {
+  font-family: "shrikhand", "roboto", sans-serif;
 }
 
 .btn {
@@ -59,42 +59,47 @@ h4 {
   background: none;
   font-size: 1.5em;
   float: right;
-  position: relative;
-  bottom: 55px;
-  right: 20px;
   cursor: pointer;
+}
+.btn-heart--card {
+  position: relative;
+  bottom: 35px;
+  right: 20px;
 }
 .btn-heart:focus {
   background: linear-gradient(#FF79DA, #9356DC);
 }
 
 .header {
+  position: fixed;
+  z-index: 1;
+  background-color: white;
   width: 100%;
-  height: 100%;
   text-align: center;
   padding-left: 10px;
   padding-top: 20px;
   padding-bottom: 5px;
-}
-.header img {
-  width: 50%;
-}
-.header__shadow {
   box-shadow: 0.5px 2px 1px rgba(128, 128, 128, 0.384);
+}
+.header .icone-retour {
+  font-size: 0.8em;
+  margin-right: -20px;
+}
+.header i {
+  float: left;
 }
 
 footer {
   padding: 30px;
   background-color: #353535;
   color: white;
-  margin-top: 85px;
   height: 150px;
 }
 footer a {
   color: white;
 }
 footer h2 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 footer li {
   padding: 5px;
@@ -104,47 +109,51 @@ footer li .icon-footer {
 }
 
 .position {
-  width: 100%;
+  text-align: center;
   font-size: 1.1em;
   font-weight: 100;
-  background-color: rgba(128, 128, 128, 0.123);
-  padding: 17px;
+  background-color: rgba(128, 128, 128, 0.219);
+  padding-bottom: 20px;
+  padding-top: 30px;
 }
 .position i {
-  margin-left: 85px;
   padding-right: 15px;
 }
 
 .description {
   text-align: center;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.103);
 }
 .description__titre {
-  font-size: 1.4em;
   width: 90%;
-  margin-top: 40px;
+  padding-top: 40px;
   margin-bottom: 15px;
-  margin-left: 12px;
+  margin-left: 17px;
 }
 .description__texte {
-  font-size: 1.14em;
+  margin-left: 18px;
+  font-size: 1.1em;
   color: rgba(0, 0, 0, 0.582);
 }
 .description__btn {
-  margin-top: 30px;
+  margin: 30px;
+  margin-left: 50px;
 }
 
 .fonctionnement {
   font-size: 1.4em;
-  margin-top: 105px;
+  margin-top: 75px;
+  margin-left: 20px;
   margin-bottom: 42px;
 }
 .fonctionnement__etape {
   border-radius: 15px;
-  height: 20px;
-  width: 270px;
+  height: 40px;
+  width: 300px;
+  padding-top: 30px;
   margin: auto;
-  padding: 15px;
-  margin-bottom: 47px;
+  margin-bottom: 40px;
   font-size: 0.95em;
   font-weight: bolder;
   box-shadow: 0px 5px 5px rgba(170, 167, 167, 0.356);
@@ -165,13 +174,17 @@ footer li .icon-footer {
   height: 20px;
   width: 20px;
   position: relative;
-  left: -23px;
+  right: 7px;
   display: inline-block;
   border-radius: 10px;
 }
 
 #resto {
-  margin-top: 132px;
+  margin-top: 65px;
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: rgba(128, 128, 128, 0.103);
 }
 
 .card-resto {
@@ -180,7 +193,6 @@ footer li .icon-footer {
   border: 0.3px solid rgba(128, 128, 128, 0.336);
   border-radius: 15px;
   width: 320px;
-  color: black;
   margin-top: 23px;
 }
 .card-resto img {
@@ -191,7 +203,9 @@ footer li .icon-footer {
   height: 170px;
 }
 .card-resto div {
-  padding: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+  color: black;
 }
 
 .new {
@@ -206,7 +220,7 @@ footer li .icon-footer {
 }
 
 img {
-  width: 100%;
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

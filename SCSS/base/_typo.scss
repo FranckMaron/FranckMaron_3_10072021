@@ -1,24 +1,18 @@
-@font-face {
-    font-family: 'roboto';
-    src: url(../../Public/polices/Roboto-Regular.svg) format('svg'),
-         url(../../Public/polices/Roboto-Regular.ttf) format('ttf');    
-}
-@font-face {
-    font-family: 'shrikhand';
-    src: url(../../Public/polices/Shrikhand-Regular.svg) format('svg'),
-         url(../../Public/polices/Shrikhand-Regular.ttf) format('ttf');
-}
 body{
     font-family: 'roboto', 'shrikhand', sans-serif;
 }
 
-h1, h2, h3{
+h1{
     font-family: 'shrikhand', 'roboto', sans-serif;
 }
 h2{
-    font-size: map-get($text-size, size1);
+    font-size: map-get($text-size, title1);
+    font-weight: 900;
 }
 h4{
-    font-size: map-get($text-size, size2);
-    font-weight: initial;
+    font-size: map-get($text-size, title2);
+    font-weight: 100;
 }
+footer h2{
+        font-family: 'shrikhand', 'roboto', sans-serif;
+    }

@@ -1,12 +1,16 @@
 @mixin header {
+    position: fixed;
+    z-index: 1;
+    background-color: white;
     width: 100%;
-    height: 100%;
     text-align: center;
     padding-left: 10px;
     padding-top: 20px;
     padding-bottom: 5px;
-    img{
-        width: 50%;
+    box-shadow: 0.5px 2px 1px rgba(128, 128, 128, 0.384); 
+    .icone-retour{
+        font-size: .8em;
+        margin-right: -20px;
     }
 }
 @mixin button{
@@ -24,11 +28,11 @@
 }
 @mixin fonctionnement-etapes{
     border-radius: 15px;
-    height: 20px;
-    width: 270px;
-    margin: auto;
-    padding: 15px;
-    margin-bottom: 47px;
+    height: 40px;
+    width: 300px;
+    padding-top: 30px;
+    margin: auto;    
+    margin-bottom: 40px;
     font-size: .95em;
     font-weight: bolder;
     @include box-shadow;
@@ -44,13 +48,13 @@
     padding: 30px;
     background-color: #353535;
     color: white;
-    margin-top: 85px;
+    
     height: 150px;
     a{
         color: white;
     }
     h2{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     li{
         padding: 5px;
