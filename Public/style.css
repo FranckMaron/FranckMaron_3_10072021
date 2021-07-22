@@ -14,10 +14,6 @@ ul {
   list-style: none;
 }
 
-main {
-  padding-top: 70px;
-}
-
 body {
   font-family: "roboto", "shrikhand", sans-serif;
 }
@@ -82,11 +78,64 @@ footer h2 {
   box-shadow: 0.5px 2px 1px rgba(128, 128, 128, 0.384);
 }
 .header .icone-retour {
-  font-size: 0.8em;
+  position: relative;
+  top: 5px;
+  left: 10px;
+  font-size: 0.7em;
   margin-right: -20px;
 }
 .header i {
   float: left;
+}
+
+.menu .menu {
+  background-color: #fcf8f8;
+}
+.menu .menu__carte {
+  background-color: #fcf8f8;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  position: relative;
+  bottom: 40px;
+  padding: 20px;
+  padding-bottom: 70px;
+}
+.menu .menu__carte a {
+  display: inline-block;
+}
+.menu .menu__section {
+  border-bottom: 4px solid #99E2D0;
+  width: 50px;
+  margin-top: 20px;
+}
+.menu .menu__section h1 {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+.menu .menu__plat {
+  background-color: white;
+  box-shadow: 0px 5px 5px rgba(170, 167, 167, 0.356);
+  border-radius: 15px;
+  width: 90%;
+  margin: 10px;
+  margin-left: 0;
+  padding: 10px;
+  font-size: 0.8em;
+}
+.menu .menu__plat .prix {
+  float: right;
+  font-weight: 900;
+}
+.menu img {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+.menu .btn {
+  width: 170px;
+  margin-top: 40px;
+  margin-left: 80px;
 }
 
 footer {
@@ -114,7 +163,7 @@ footer li .icon-footer {
   font-weight: 100;
   background-color: rgba(128, 128, 128, 0.219);
   padding-bottom: 20px;
-  padding-top: 30px;
+  padding-top: 80px;
 }
 .position i {
   padding-right: 15px;
@@ -157,6 +206,9 @@ footer li .icon-footer {
   font-size: 0.95em;
   font-weight: bolder;
   box-shadow: 0px 5px 5px rgba(170, 167, 167, 0.356);
+}
+.fonctionnement__etape a {
+  display: inline-block;
 }
 .fonctionnement__icon {
   margin-right: 20px;
@@ -217,10 +269,6 @@ footer li .icon-footer {
   right: 10px;
   padding: 5px;
   width: 70px;
-}
-
-img {
-  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
