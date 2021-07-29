@@ -1,3 +1,6 @@
 footer{
     @include footer;
+    @include pc{
+        text-align: center;
+    }
 }

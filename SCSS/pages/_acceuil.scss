@@ -1,3 +1,17 @@
+.presentation{
+    @include pc{
+        display: flex;
+        section{
+            width: 50%;
+            text-align: center;
+            background-color: white;
+        }
+        .description{
+            border-right: 5px solid $color-primary;
+        }
+    }
+}
+
 .position{
     text-align: center;
     font-size: 1.1em;
@@ -17,10 +31,10 @@
     background-color: rgba(128, 128, 128, 0.103);
         &__titre{
             font-size: map-get($text-size, size1);
-            width: 90%;
+            width: 70%;
+            margin: auto;
             padding-top: 40px;
             margin-bottom: 15px;
-            margin-left: 17px;
         }
         &__texte{
             margin-left: 18px;
@@ -61,29 +75,36 @@
     border-radius: 10px;
 }
 #resto{
-    margin-top: 65px;
     padding-left: 20px;
     padding-top: 40px;
     padding-bottom: 60px;
     background-color: rgba(128, 128, 128, 0.103);
+    @include pc{
+        text-align: center;
+    }
 }
 .card-resto{
     display: inline-block;
     @include box-shadow;
     @include border;
-    width: 320px;    
+    width: 90%;    
     margin-top: 23px;
     img {
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
-        background-size: cover;
-        width: 320px;
+        object-fit: cover;
+        width: 100%;
         height: 170px;
         }
     div{
         padding-left: 15px;
         padding-top: 15px;
         color: black;
+    }
+    @include pc{
+        width: 22%;
+        margin-right: 40px;
+        text-align: initial;
     }
 }
 .new{

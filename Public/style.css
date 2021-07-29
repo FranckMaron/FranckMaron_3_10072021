@@ -90,9 +90,6 @@ footer h2 {
 
 .menu .menu {
   background-color: #fcf8f8;
-}
-.menu .menu__carte {
-  background-color: #fcf8f8;
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
   position: relative;
@@ -100,15 +97,15 @@ footer h2 {
   padding: 20px;
   padding-bottom: 70px;
 }
-.menu .menu__carte a {
+.menu .menu a {
   display: inline-block;
 }
-.menu .menu__section {
+.menu .menu__section__titre {
   border-bottom: 4px solid #99E2D0;
   width: 50px;
   margin-top: 20px;
 }
-.menu .menu__section h1 {
+.menu .menu__section__titre h1 {
   margin-top: 10px;
   margin-right: 10px;
   margin-bottom: 30px;
@@ -137,6 +134,21 @@ footer h2 {
   margin-top: 40px;
   margin-left: 80px;
 }
+@media all and (min-width: 1025px) {
+  .menu {
+    text-align: center;
+  }
+  .menu .menu__carte {
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu .menu__section {
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+    width: 25%;
+  }
+}
 
 footer {
   padding: 30px;
@@ -155,6 +167,25 @@ footer li {
 }
 footer li .icon-footer {
   width: 20px;
+}
+@media all and (min-width: 1025px) {
+  footer {
+    text-align: center;
+  }
+}
+
+@media all and (min-width: 1025px) {
+  .presentation {
+    display: flex;
+  }
+  .presentation section {
+    width: 50%;
+    text-align: center;
+    background-color: white;
+  }
+  .presentation .description {
+    border-right: 5px solid #9356DC;
+  }
 }
 
 .position {
@@ -175,10 +206,10 @@ footer li .icon-footer {
   background-color: rgba(128, 128, 128, 0.103);
 }
 .description__titre {
-  width: 90%;
+  width: 70%;
+  margin: auto;
   padding-top: 40px;
   margin-bottom: 15px;
-  margin-left: 17px;
 }
 .description__texte {
   margin-left: 18px;
@@ -232,11 +263,15 @@ footer li .icon-footer {
 }
 
 #resto {
-  margin-top: 65px;
   padding-left: 20px;
   padding-top: 40px;
   padding-bottom: 60px;
   background-color: rgba(128, 128, 128, 0.103);
+}
+@media all and (min-width: 1025px) {
+  #resto {
+    text-align: center;
+  }
 }
 
 .card-resto {
@@ -244,20 +279,27 @@ footer li .icon-footer {
   box-shadow: 0px 5px 5px rgba(170, 167, 167, 0.356);
   border: 0.3px solid rgba(128, 128, 128, 0.336);
   border-radius: 15px;
-  width: 320px;
+  width: 90%;
   margin-top: 23px;
 }
 .card-resto img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  background-size: cover;
-  width: 320px;
+  object-fit: cover;
+  width: 100%;
   height: 170px;
 }
 .card-resto div {
   padding-left: 15px;
   padding-top: 15px;
   color: black;
+}
+@media all and (min-width: 1025px) {
+  .card-resto {
+    width: 22%;
+    margin-right: 40px;
+    text-align: initial;
+  }
 }
 
 .new {
