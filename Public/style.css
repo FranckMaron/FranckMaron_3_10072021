@@ -260,6 +260,16 @@ footer li .icon-footer {
 .fonctionnement__etape a {
   display: inline-block;
 }
+@media all and (min-width: 1025px) {
+  .fonctionnement__etape {
+    width: 40%;
+  }
+}
+@media all and (min-width: 600px) {
+  .fonctionnement__etape {
+    width: 50%;
+  }
+}
 .fonctionnement__icon {
   margin-right: 20px;
   width: 10px;

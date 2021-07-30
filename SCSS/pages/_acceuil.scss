@@ -61,6 +61,12 @@
     }
     &__etape{
         @include fonctionnement-etapes;
+        @include pc {
+            width: 40%;
+        }
+        @include tablette {
+            width: 50%;
+        }
     }
     &__icon{        
         margin-right: 20px;
