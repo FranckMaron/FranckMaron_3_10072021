@@ -1,5 +1,4 @@
-.presentation{
-    text-align: center;
+.presentation{    
     @include pc{
         display: flex;
         section{

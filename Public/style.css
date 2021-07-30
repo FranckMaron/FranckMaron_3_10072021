@@ -179,9 +179,6 @@ footer li .icon-footer {
   }
 }
 
-.presentation {
-  text-align: center;
-}
 @media all and (min-width: 1025px) {
   .presentation {
     display: flex;
@@ -252,7 +249,7 @@ footer li .icon-footer {
 .fonctionnement__etape {
   border-radius: 15px;
   height: 40px;
-  width: 300px;
+  width: 80%;
   padding-top: 30px;
   margin: auto;
   margin-bottom: 40px;
