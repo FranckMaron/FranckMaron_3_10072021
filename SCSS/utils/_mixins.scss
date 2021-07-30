@@ -122,3 +122,9 @@
         @content;
     }
 }
+
+@mixin tablette{
+    @media all and (min-width: 600px) {
+        @content;
+    }
+}

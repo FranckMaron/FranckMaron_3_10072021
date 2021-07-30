@@ -173,7 +173,15 @@ footer li .icon-footer {
     text-align: center;
   }
 }
+@media all and (min-width: 600px) {
+  footer {
+    text-align: center;
+  }
+}
 
+.presentation {
+  text-align: center;
+}
 @media all and (min-width: 1025px) {
   .presentation {
     display: flex;
@@ -182,9 +190,6 @@ footer li .icon-footer {
     width: 50%;
     text-align: center;
     background-color: white;
-  }
-  .presentation .description {
-    border-right: 5px solid #9356DC;
   }
 }
 
@@ -204,6 +209,12 @@ footer li .icon-footer {
   text-align: center;
   width: 100%;
   background-color: rgba(128, 128, 128, 0.103);
+}
+@media all and (min-width: 1025px) {
+  .description {
+    padding-top: 130px;
+    border-right: 5px solid #9356DC;
+  }
 }
 .description__titre {
   width: 70%;
@@ -226,6 +237,17 @@ footer li .icon-footer {
   margin-top: 75px;
   margin-left: 20px;
   margin-bottom: 42px;
+  text-align: initial;
+}
+@media all and (min-width: 1025px) {
+  .fonctionnement {
+    text-align: center;
+  }
+}
+@media all and (min-width: 600px) {
+  .fonctionnement {
+    text-align: center;
+  }
 }
 .fonctionnement__etape {
   border-radius: 15px;
@@ -267,9 +289,13 @@ footer li .icon-footer {
   padding-top: 40px;
   padding-bottom: 60px;
   background-color: rgba(128, 128, 128, 0.103);
+  text-align: center;
 }
-@media all and (min-width: 1025px) {
-  #resto {
+#resto h2 {
+  text-align: initial;
+}
+@media all and (min-width: 600px) {
+  #resto h2 {
     text-align: center;
   }
 }
@@ -281,6 +307,7 @@ footer li .icon-footer {
   border-radius: 15px;
   width: 90%;
   margin-top: 23px;
+  text-align: initial;
 }
 .card-resto img {
   border-top-left-radius: 15px;

@@ -3,4 +3,7 @@ footer{
     @include pc{
         text-align: center;
     }
+    @include tablette{
+        text-align: center;
+    }
 }
