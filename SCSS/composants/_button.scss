@@ -1,5 +1,18 @@
 .btn{
-    @include button
+    background: linear-gradient($color-secondary, $color-primary);
+    border: none;
+    border-radius: 25px;
+    height: 50px;
+    width: 220px;
+    margin-left: 20px;
+    color: white;
+    font-size: .9em;
+    font-weight: 900;
+    @include box-shadow;
+    cursor: pointer;
+    &:hover{
+        background: linear-gradient($color-secondary-light, $color-primary-light);
+    }
 }
 .btn-heart{
     border: none;

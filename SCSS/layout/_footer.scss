@@ -1,5 +1,20 @@
 footer{
-    @include footer;
+    padding: 30px;
+    background-color: #353535;
+    color: white;    
+    height: 150px;
+    a{
+        color: white;
+    }
+    h2{
+        margin-bottom: 10px;
+    }
+    li{
+        padding: 5px;
+            .icon-footer{
+                width: 20px;
+            }
+    }
     @include pc{
         text-align: center;
     }

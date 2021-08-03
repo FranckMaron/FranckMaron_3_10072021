@@ -1,5 +1,20 @@
-.header{
-    @include header;
+header{
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    box-shadow: 0.5px 2px 1px rgba(128, 128, 128, 0.384); 
+    .icone-retour{
+        position: relative;
+        top: 5px;
+        left: 10px;
+        font-size: .7em;
+        margin-right: -20px;
+    }
         i{
             float: left;
         }

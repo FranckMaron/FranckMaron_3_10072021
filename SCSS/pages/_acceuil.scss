@@ -60,7 +60,18 @@
         text-align: center;
     }
     &__etape{
-        @include fonctionnement-etapes;
+        border-radius: 15px;
+        height: 40px;
+        width: 80%;
+        padding-top: 30px;
+        margin: auto;    
+        margin-bottom: 40px;
+        font-size: .95em;
+        font-weight: bolder;
+        @include box-shadow;
+        a{
+         display: inline-block;
+        }
         @include pc {
             width: 40%;
         }
@@ -93,7 +104,7 @@
     padding-top: 40px;
     padding-bottom: 60px;
     background-color: rgba(128, 128, 128, 0.103);
-    text-align: center;
+    
     h2{
         text-align: initial;
         @include tablette{
@@ -103,9 +114,11 @@
 }
 .card-resto{
     display: inline-block;
+    background-color: white;
     @include box-shadow;
-    @include border;
-    width: 90%;
+    border: .3px solid rgba(128, 128, 128, 0.336);
+    border-radius: 15px;
+    width:95%;
     margin-top: 23px;
     text-align: initial;
     img {
