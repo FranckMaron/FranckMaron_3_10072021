@@ -2,14 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
+    width: 0px;
     background-color: $color-tertiary;
     color:white;
     font-size: 1.5em;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    transform: translatex(50px);
+    transition: width .5s;
+    ;
     .icon{
-         transform: rotate(0)
+         transition: transform .5s;
+
     }
 }

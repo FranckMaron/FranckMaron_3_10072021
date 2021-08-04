@@ -1,5 +1,32 @@
-.presentation{ 
-    
+.loader{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgb(46, 45, 45);
+    justify-content: center;
+    align-items: center; 
+    z-index: 2;
+    opacity: 80%;
+    height: 100%;
+    width: 100%;
+    &__title{
+        color: $color-primary;
+    }
+    &__barre{
+        overflow: hidden;
+        border-radius: 25px;
+        color: white;
+        border: 2px solid $color-secondary;
+        width: 30%;
+        height: 30px;
+        &--remplissage{
+            border: none;          
+            background: linear-gradient(to right, $color-primary, $color-secondary, $color-tertiary);
+            width: 0%;
+        }
+    }
+}
+.presentation{    
     @include pc{
         display: flex;
         section{
@@ -29,8 +56,7 @@
     background-color: rgba(128, 128, 128, 0.103);    
     @include pc{
         padding-top: 130px;
-        border-right: 5px solid $color-primary;
-        
+        border-right: 5px solid $color-primary;        
     }
         &__titre{
             font-size: map-get($text-size, size1);
