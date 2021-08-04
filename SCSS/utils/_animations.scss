@@ -2,10 +2,10 @@
     animation: apparition-plat 1s both;
     @for $i from 1 through 10{
         &--#{$i}{
-            animation-delay: .3s *$i;
+            animation-delay: $delai-plats *$i;
         }
     }
-    &:hover .checkbox{
+    &:hover .checkbox, &:active .checkbox{
         width: 50px;
         .icon{
         transform: rotate(360deg);

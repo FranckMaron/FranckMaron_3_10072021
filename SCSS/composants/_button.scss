@@ -9,7 +9,13 @@
     font-size: .9em;
     font-weight: 900;
     @include box-shadow;
-    cursor: pointer;
+    cursor: pointer;    
+    &__link{  
+        justify-content: center;
+        align-items: center;     
+        display: flex;
+        margin: 10px auto;              
+    }
     &:hover{
         background: linear-gradient($color-secondary-light, $color-primary-light);
     }
@@ -19,13 +25,13 @@
     background: none;    
     font-size: 1.5em;
     float: right;
-    cursor: pointer;
+    cursor: pointer;    
     &--card{
         position: relative;
         bottom: 35px;
         right: 20px;
     }
-    &:focus{
+   &:focus{
         background: linear-gradient($color-secondary, $color-primary);
     }
 }

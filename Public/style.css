@@ -67,10 +67,10 @@
 .menu__plat--10 {
   animation-delay: 3s;
 }
-.menu__plat:hover .checkbox {
+.menu__plat:hover .checkbox, .menu__plat:active .checkbox {
   width: 50px;
 }
-.menu__plat:hover .checkbox .icon {
+.menu__plat:hover .checkbox .icon, .menu__plat:active .checkbox .icon {
   transform: rotate(360deg);
 }
 
@@ -134,6 +134,12 @@ footer h2 {
   font-weight: 900;
   box-shadow: 0px 5px 5px rgba(170, 167, 167, 0.356);
   cursor: pointer;
+}
+.btn__link {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 10px auto;
 }
 .btn:hover {
   background: linear-gradient(rgba(255, 122, 217, 0.7), rgba(146, 86, 220, 0.7));
@@ -228,7 +234,6 @@ footer li .icon-footer {
   justify-content: center;
   align-items: center;
   z-index: 2;
-  opacity: 80%;
   height: 100%;
   width: 100%;
 }
@@ -240,7 +245,7 @@ footer li .icon-footer {
   border-radius: 25px;
   color: white;
   border: 2px solid #FF79DA;
-  width: 30%;
+  width: 50%;
   height: 30px;
 }
 .loader__barre--remplissage {
@@ -274,8 +279,8 @@ footer li .icon-footer {
 
 .description {
   text-align: center;
-  width: 100%;
   background-color: rgba(128, 128, 128, 0.103);
+  padding-bottom: 10px;
 }
 @media all and (min-width: 1025px) {
   .description {
@@ -293,10 +298,6 @@ footer li .icon-footer {
   margin-left: 18px;
   font-size: 1.1em;
   color: rgba(0, 0, 0, 0.582);
-}
-.description__btn {
-  margin: 30px;
-  margin-left: 50px;
 }
 
 .fonctionnement {
