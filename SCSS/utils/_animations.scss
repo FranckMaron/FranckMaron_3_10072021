@@ -1,10 +1,10 @@
 .menu__plat{
-    &:hover .checkbox, &:hover .prix{
-        transform: translatex(-60px);
+    &:hover .checkbox{
+        transform: translatex(0px);
         transition: transform 1.5s;
-    }
-      &:hover .icon{
+        .icon{
         transform: rotate(360deg);
         transition: transform 1s .5s;
+        }
     }
 }

@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
-.menu__plat:hover .checkbox, .menu__plat:hover .prix {
-  transform: translatex(-60px);
+.menu__plat:hover .checkbox {
+  transform: translatex(0px);
   transition: transform 1.5s;
 }
-.menu__plat:hover .icon {
+.menu__plat:hover .checkbox .icon {
   transform: rotate(360deg);
   transition: transform 1s 0.5s;
 }
@@ -92,8 +92,7 @@ footer h2 {
   font-size: 1.5em;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  margin: 0px -60px 0px 10px;
-  transform: translatex(0);
+  transform: translatex(50px);
 }
 .checkbox .icon {
   transform: rotate(0);
@@ -356,6 +355,7 @@ footer li .icon-footer {
 }
 .menu__plat .prix {
   margin: 10px;
+  margin-right: -30px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;

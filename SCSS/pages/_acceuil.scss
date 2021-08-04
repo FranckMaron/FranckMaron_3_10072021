@@ -1,4 +1,5 @@
-.presentation{    
+.presentation{ 
+    
     @include pc{
         display: flex;
         section{
@@ -22,13 +23,14 @@
     }
 }
 
-.description{  
+.description{      
     text-align: center;
     width: 100%;
-    background-color: rgba(128, 128, 128, 0.103);
+    background-color: rgba(128, 128, 128, 0.103);    
     @include pc{
         padding-top: 130px;
         border-right: 5px solid $color-primary;
+        
     }
         &__titre{
             font-size: map-get($text-size, size1);
