@@ -20,9 +20,7 @@
         background: linear-gradient($color-secondary-light, $color-primary-light);
     }
 }
-.btn-heart{
-    border: none;
-    background: none;    
+.btn-heart{   
     font-size: 1.5em;
     float: right;
     cursor: pointer;    
@@ -31,7 +29,7 @@
         bottom: 35px;
         right: 20px;
     }
-   &:focus{
+   &:hover{
         background: linear-gradient($color-secondary, $color-primary);
     }
 }
