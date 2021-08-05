@@ -20,3 +20,8 @@
 .loader{
     animation: loader-none .1s 2.9s both;
 }
+
+.heart--full:hover{
+    animation: coeur-rempli 1.5s both ease-in;
+}
+

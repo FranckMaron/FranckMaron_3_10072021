@@ -26,12 +26,13 @@
     }
 }
 .position{
-    text-align: center;
+    display: flex;
+    justify-content: center;
     font-size: 1.1em;
     font-weight: 100;
     background-color: rgba(128, 128, 128, 0.219);
     padding-bottom: 20px;
-    padding-top: 80px;
+    padding-top: 90px;
     i{
         padding-right: 15px;
     }
@@ -141,9 +142,7 @@
         height: 170px;
         }
     div{
-        padding-left: 15px;
-        padding-top: 15px;
-        color: black;
+        padding: 15px;
     }
     @include pc{
         width: 22%;

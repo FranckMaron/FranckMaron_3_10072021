@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="loader">
+    <!--<div class="loader">
         <div>
             <h1 class="loader__title">Ohmyfood</h1>
         </div>
@@ -18,7 +18,7 @@
             <div class="loader__barre loader__barre--remplissage">
             </div>
         </div>
-    </div>
+    </div>-->
     <header>
         <h1>ohmyfood</h1>
     </header>
@@ -36,8 +36,7 @@
                 <h2 class="fonctionnement">Fonctionnement</h2>
                 <div class="fonctionnement__etape"> <span class="pastilles">1</span> <i
                         class="fas fa-mobile-alt fonctionnement__icon"></i> Choisissez un restaurant</div>
-                <div class="fonctionnement__etape"> <span class="pastilles">2</span> <i
-                        class="fas fa-bars fonctionnement__icon"></i> Composez votre menu</div>
+                <div class="fonctionnement__etape"> <span class="pastilles">2</span> <i class="fas fa-list-ul fonctionnement__icon"></i> Composez votre menu</div>
                 <div class="fonctionnement__etape"> <span class="pastilles">3</span> <i
                         class="fas fa-store fonctionnement__icon fonctionnement__icon--pink"></i> Dégustez au restaurant
                 </div>
@@ -45,48 +44,60 @@
         </div>
         <section id="resto">
             <h2>Restaurants</h2>
-            <div class="card-resto">
-                <a href="palettedu_gout.html">
-                    <img src="images/palette-du-gout.jpg" alt="Entrée servi à table">
-                    <div>
-                        <span class="new">Nouveau</span>
-                        <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
-                    </div>
-                </a>
-                <span class="btn-heart btn-heart--card"><i class="far fa-heart "></i></span>
-            </div>
-            <div class="card-resto">
-                <a href="la_note_enchantée.html">
-                    <img src="images/note-enchantée.jpg" alt="Plat chaud accompagné de son verre de vin">
-                    <div>
-                        <span class="new">Nouveau</span>
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
-                    </div>
-                </a>
-                <span class="btn-heart btn-heart--card"><i class="far fa-heart"></i></span>
-            </div>
-            <div class="card-resto">
-                <a href="la_francaise.html">
-                    <img src="images/la-francaise.jpg" alt="Entée à la mayonnaise">
-                    <div>
-                        <h3>A la française</h3>
-                        <p>Cité Rouge</p>
-                    </div>
-                </a>
-                <span class="btn-heart btn-heart--card"><i class="far fa-heart"></i></span>
-            </div>
-            <div class="card-resto">
-                <a href="delices_des_sens.html">
-                    <img src="images/delices-des-sens.jpg" alt="Poisson sur un lit de sel">
-                    <div>
-                        <h3>Le délice des sens</h3>
-                        <p>Folie-Méricourt</p>
-                    </div>
-                </a>
-                <span class="btn-heart btn-heart--card"><i class="far fa-heart"></i></span>
-            </div>
+            <a class="card-resto" href="palettedu_gout.html">
+                <img src="images/palette-du-gout.jpg" alt="Entrée servi à table">
+                <div>
+                    <span class="new">Nouveau</span>
+                    <h3>La palette du goût</h3>
+                    <p>Ménilmontant</p>
+                    <span class="heart-box--index">
+                        <i class="heart far fa-heart"></i>
+                        <i class="heart--full heart--full--index fas fa-heart"></i>
+                    </span>
+                </div>
+
+            </a>
+
+            <a class="card-resto" href="la_note_enchantée.html">
+                <img src="images/note-enchantée.jpg" alt="Plat chaud accompagné de son verre de vin">
+                <div>
+                    <span class="new">Nouveau</span>
+                    <h3>La note enchantée</h3>
+                    <p>Charonne</p>
+                    <span class="heart-box--index">
+                        <i class="heart far fa-heart"></i>
+                        <i class="heart--full heart--full--index fas fa-heart"></i>
+                    </span>
+                </div>
+
+            </a>
+
+            <a class="card-resto" href="la_francaise.html">
+                <img src="images/la-francaise.jpg" alt="Entée à la mayonnaise">
+                <div>
+                    <h3>A la française</h3>
+                    <p>Cité Rouge</p>
+                    <span class="heart-box--index">
+                        <i class="heart far fa-heart"></i>
+                        <i class="heart--full heart--full--index fas fa-heart"></i>
+                    </span>
+                </div>
+
+
+            </a>
+
+            <a class="card-resto" href="delices_des_sens.html">
+                <img src="images/delices-des-sens.jpg" alt="Poisson sur un lit de sel">
+                <div>
+                    <h3>Le délice des sens</h3>
+                    <p>Folie-Méricourt</p>
+                    <span class="heart-box--index">
+                        <i class="heart far fa-heart"></i>
+                        <i class="heart--full heart--full--index fas fa-heart"></i>
+                    </span>
+                </div>
+            </a>
+
         </section>
     </main>
     <footer>

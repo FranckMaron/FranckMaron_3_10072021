@@ -7,12 +7,11 @@
     padding: 20px;
     text-align: center;
     padding-bottom: 70px;
-    h2{
+    .menu__header{
+        display: flex;
+        justify-content: center;
         font-family: 'shrikhand', 'roboto', sans-serif;
-    }
-    .btn{
-            margin-top: 50px;
-        }  
+    }      
     &__section__titre{
         border-bottom: 4px solid $color-tertiary;
         width: 50px;
@@ -51,9 +50,11 @@
             display: flex;
             align-items: flex-end;
             font-weight: 900;
-        }
-               
+        }               
     }
+    .btn{
+            margin-top: 50px;
+        }
     @include pc{
         margin: auto;
         width: 70%;
