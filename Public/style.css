@@ -97,7 +97,6 @@ h1 {
 }
 
 h2 {
-  font-family: "shrikhand", "roboto", sans-serif;
   font-weight: 900;
 }
 
@@ -191,6 +190,7 @@ footer {
   padding: 30px;
   background-color: #353535;
   color: white;
+  height: auto;
 }
 footer a {
   color: white;
@@ -204,11 +204,6 @@ footer li {
 }
 footer li .icon-footer {
   width: 20px;
-}
-@media all and (min-width: 1025px) {
-  footer {
-    text-align: center;
-  }
 }
 @media all and (min-width: 600px) {
   footer {
@@ -292,16 +287,10 @@ footer li .icon-footer {
 
 .fonctionnement {
   font-size: 1.4em;
-  font-family: "roboto", "shrikhand", sans-serif;
   margin-top: 75px;
   margin-left: 20px;
   margin-bottom: 42px;
   text-align: initial;
-}
-@media all and (min-width: 1025px) {
-  .fonctionnement {
-    text-align: center;
-  }
 }
 @media all and (min-width: 600px) {
   .fonctionnement {
@@ -318,11 +307,6 @@ footer li .icon-footer {
   font-size: 0.95em;
   font-weight: bolder;
   box-shadow: 0px 5px 5px rgba(170, 167, 167, 0.356);
-}
-@media all and (min-width: 1025px) {
-  .fonctionnement__etape {
-    width: 40%;
-  }
 }
 @media all and (min-width: 600px) {
   .fonctionnement__etape {
@@ -357,9 +341,13 @@ footer li .icon-footer {
   text-align: center;
 }
 #resto h2 {
-  font-family: "roboto", "shrikhand", sans-serif;
   margin-left: 10px;
   text-align: initial;
+}
+@media all and (min-width: 600px) {
+  #resto h2 {
+    text-align: center;
+  }
 }
 
 .card-resto {
@@ -411,6 +399,9 @@ footer li .icon-footer {
   padding: 20px;
   text-align: center;
   padding-bottom: 70px;
+}
+.menu h2 {
+  font-family: "shrikhand", "roboto", sans-serif;
 }
 .menu .btn {
   margin-top: 50px;

@@ -50,7 +50,7 @@
 .description{      
     text-align: center;
     background-color: rgba(128, 128, 128, 0.103);
-    padding-bottom: 10px;   
+    padding-bottom: 10px; 
         &__titre{
             font-size: map-get($text-size, size1);
             width: 70%;
@@ -70,14 +70,10 @@
 }
 .fonctionnement{
     font-size: 1.4em;
-    font-family: 'roboto', 'shrikhand', sans-serif;
     margin-top: 75px;
     margin-left: 20px;
     margin-bottom: 42px;
     text-align: initial;
-    @include pc{
-        text-align: center;
-    }
     @include tablette{
         text-align: center;
     }
@@ -91,9 +87,6 @@
         font-size: .95em;
         font-weight: bolder;
         @include box-shadow;
-        @include pc {
-            width: 40%;
-        }
         @include tablette {
             width: 50%;
         }
@@ -124,9 +117,11 @@
     background-color: rgba(128, 128, 128, 0.103);
     text-align: center;    
     h2{
-        font-family: 'roboto', 'shrikhand', sans-serif;
         margin-left: 10px;
         text-align: initial;
+        @include tablette{
+            text-align: center;
+        }
     }
 }
 .card-resto{

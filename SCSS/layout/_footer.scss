@@ -2,6 +2,7 @@ footer{
     padding: 30px;
     background-color: #353535;
     color: white;
+    height: auto;
     a{
         color: white;
     }
@@ -14,9 +15,6 @@ footer{
             .icon-footer{
                 width: 20px;
             }
-    }
-    @include pc{
-        text-align: center;
     }
     @include tablette{
         text-align: center;
