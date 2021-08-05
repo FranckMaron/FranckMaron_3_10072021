@@ -54,8 +54,7 @@
     @include pc{
         margin: auto;
         width: 70%;
-        .menu__carte{
-            
+        .menu__carte{            
             display: flex;
             justify-content: space-around;
         }
@@ -65,11 +64,10 @@
             text-align: initial;
             width: 25%;
         }
-        text-align: center;
+        
     }
 }      
 img{
-object-fit: cover;
 width: 100%;
 height: 300px;
 }

@@ -6,7 +6,6 @@
     border: .3px solid rgba(128, 128, 128, 0.336);
     border-radius: 15px;
 }
-
 @mixin pc{
     @media all and (min-width: 1025px) {
         @content;
