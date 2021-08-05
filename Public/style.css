@@ -167,25 +167,25 @@ ul {
 .heart {
   font-size: 1.5em;
   cursor: pointer;
-  margin-left: 50px;
+  margin-left: 20px;
 }
 .heart--full {
   cursor: pointer;
-  font-size: 1.23em;
-  bottom: 1px;
+  font-size: 1.3em;
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
+  bottom: 0.8px;
 }
 .heart--full--resto {
   position: relative;
-  right: 25px;
+  right: 25.5px;
 }
 .heart--full--index {
   position: relative;
-  right: 25.7px;
+  right: 26.5px;
 }
 
 .checkbox {
